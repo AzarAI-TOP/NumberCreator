@@ -25,7 +25,7 @@ def get_GroupPoints(x0, y0, rec_range, r, n) -> list:
 class MainWindow(QtWidgets.QWidget):
     def __init__(self, parent=None):
         super(QtWidgets.QWidget, self).__init__(parent)
-        uic.loadUi("./Mainwindow.ui", self)
+        uic.loadUi("./ui.ui", self)
 
         # 设置部分UI
         self.setWindowTitle("NumberCreater")
