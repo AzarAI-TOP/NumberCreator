@@ -9,7 +9,7 @@ from PyQt5.QtCore import *
 def get_GroupPoints(x0, y0, rec_range, r, n) -> list:
     point_group = []
     # 随机获取给定半径大小的随机点数
-    rng = np.random.RandomState(int(time.time()))
+    rng = np.random.RandomState()
     r0 = rng.randint(0, r+1, n, dtype=int)
     thete0 = rng.randint(0, int(2*np.pi), n, dtype=int)
 
